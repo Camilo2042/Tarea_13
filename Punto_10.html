@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="Punto_10" content="Ejercicios de practica React">
+    <title>Punto 10</title>
+  </head>
+  <body>
+    <div id="root">
+
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+function images(src, height, width) {
+    var a = document.createElement("img");
+    a.src = src;
+    a.height = height;
+    a.width = width;
+    document.body.appendChild(a);
+  }
+
+const data = {
+  title_1: [<p>{images('Pics/pic1.jpeg',125,75)}</p>,<p>Recetas.com</p>],
+  paragraph_1: "Recetas Principales",
+  paragraph_2: "Postres Latinos",
+  paragraph_3: "Bienvenido a nuestro sitio web sobre gastronomia latina, te invitamos a preparar nuestras recetas",
+  paragraph_4: "Nuevas Recetas",
+  paragraph_5: "**Arroz Criollo**",
+  paragraph_6: ["Tiempo de preparacion: ",<strong>45 minutos</strong>," Numero de porciones ",<strong>4</strong>],
+  paragraph_7: "Ingredientes",
+  paragraph_8: [<strong><li>Salsa de tomate</li><li>Cortarlas en rodajas</li><li>1 cebolla larga picada 45gr</li><li>2 dientes de ajo finamente picado 3gr</li><li>1 pimenton rojo picado en cuadritos 60gr</li><li>1 taza de arroz blanco 225gr</li><li>1 taza de maiz desgranado 79gr</li><li>150gr de pechuga de pollo cocinado y desmechado</li><li>Sal al gusto</li></strong>],
+  paragraph_9: "Preparacion",
+  paragraph_10: [<ol><li>Calentar en una olla el aceite, sofreir la cebolla junto el ajo, el pimentin por 3 minutos.</li><li>Adicionar el arroz y continua sofriendo para que se dore.<li>Agregar el pollo, el maiz desgranado y las verduras.</li><li>Mezclar todo, rectificar la sal y dejar cocinar hasta que seque.</li><li>Bajar el fuego, tapar la olla y continuar la coccion por 25 minutos mas.</li></li></ol>],
+  paragraph_11: "Esta rica receta fue proporcionada por Maria Paula.",
+}
+
+const title_x = <h1>{data.title_1}</h1>;
+
+const paragraph_x = <a href='https://www.recetasnestle.com.co/recetas' target='_blank'><p>{data.paragraph_1}</p></a>;
+const paragraph_2x = <a href='https://www.laylita.com/recetas/postres-latinos/' target='_blank'><p>{data.paragraph_2}</p></a>;
+
+const paragraph_3x = <p>{data.paragraph_3}</p>;
+const paragraph_4x = <h1>{data.paragraph_4}</h1>;
+const paragraph_5x = <h2>{data.paragraph_5}</h2>;
+const paragraph_6x = <p>{data.paragraph_6}</p>;
+const paragraph_7x = <h2>{data.paragraph_7}</h2>;
+const paragraph_8x = <p>{data.paragraph_8}</p>;
+const paragraph_9x = <h2>{data.paragraph_9}</h2>;
+const paragraph_10x = <p>{data.paragraph_10}</p>;
+const paragraph_11x = <p>{data.paragraph_11}</p>;
+
+
+
+const element = (
+  <div>
+    {title_x}
+    {paragraph_x}
+    {paragraph_2x}
+    {paragraph_3x}
+    {paragraph_4x}
+    {paragraph_5x}
+    {paragraph_6x}
+    {paragraph_7x}
+    {paragraph_8x}
+    {paragraph_9x}
+    {paragraph_10x}
+    {paragraph_11x}
+  </div>
+);
+
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+    </script>
+  </body>
+</html>
