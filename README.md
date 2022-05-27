@@ -25,4 +25,4 @@ Los objetos del DOM modelizan tanto la ventana del navegador como el historial, 
 
 ---
 
-![icono](https://github.com/Camilo2042/Tarea_13/tree/main/Screen%20shots/dom.png)
+![icono](https://github.com/Camilo2042/Tarea_13/blob/main/Screen%20shots/dom.png)
